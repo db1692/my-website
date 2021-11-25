@@ -1,0 +1,33 @@
+.navbar {
+  background-color: #B69D74;
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  margin: auto;
+  text-align: center;
+}
+
+.navbar-brand {
+  font-size: 1em;
+  padding-right: 13px;
+  color: black !important;
+}
+
+
+@media (min-width: 768px) {
+
+  .navbar-brand.abs {
+    position: absolute;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+}
+
+.logos {
+  max-width: 35px;
+}
