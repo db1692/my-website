@@ -36,5 +36,4 @@ window.onload = function() {
 		var dy = y1-y2;
 		return Math.sqrt( dx*dx + dy*dy );
 	}
-
 };
