@@ -3,7 +3,7 @@ html, body {
   padding: 0;
   padding-bottom: 20px;
   height: 100%;
-  background-color: #F5F5EF;
+  background-color: #9bafd9;
   color: #1f2839;
   font-family: 'Open Sans', sans-serif;
   width: 100%;
@@ -50,7 +50,7 @@ footer {
   margin-top: 3%;
   width: 100%;
   height: 60px;
-  background: #D0CAB2;
+  background: #background: rgba(0, 0, 0, 0.4);;
 }
 
 .footer-text {
