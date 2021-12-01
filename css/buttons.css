@@ -4,6 +4,7 @@
   width: 200px;
   height: 80px;
   margin:auto;
+  margin-top: 8%;
   margin-bottom: 8%;
   transition: width 0.8s cubic-bezier(0.23, 1, 0.32, 1), height 0.8s cubic-bezier(0.23, 1, 0.32, 1), transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transform-style: preserve-3d;
@@ -18,8 +19,8 @@
   height: 100%;
   margin-bottom: 3%;
   line-height: 80px;
-  background-color: #B69D74;
-  color: black;
+  background-color: #1f2839;
+  color: #ACBCE8;
   cursor: pointer;
   backface-visibility: hidden;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -27,7 +28,7 @@
 }
 
 .btn-front:hover {
-  background-color: #D0CAB2;
+  background-color: #8BA3D6;
 }
 
 .btn-back {
@@ -35,8 +36,8 @@
   width: 100%;
   height: 100%;
   margin-bottom: 3%;
-  background-color: #D0CAB2;
-  color: #222;
+  background-color: #8BA3D6;
+  color: #1f2839;
   transform: translateZ(-2px) rotateX(180deg);
   overflow: hidden;
   transition: box-shadow 0.8s ease;
