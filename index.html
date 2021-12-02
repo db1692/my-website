@@ -12,9 +12,12 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans:ital,wght@0,400;0,800;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Montserrat&display=swap" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./navbar.js">
+
+  </script>
 
 
   <script>
@@ -22,16 +25,13 @@
       $(window).scroll(function() {
 
         $(".faded").each(function(i) {
-
           var bottom_of_object = $(this).offset().top + $(this).outerHeight();
           var bottom_of_window = $(window).scrollTop() + $(window).height();
 
           if (bottom_of_window > bottom_of_object) {
-
             $(this).animate({
               'opacity': '1'
             }, 1000);
-
           }
         });
       });
@@ -42,10 +42,9 @@
 
 </head>
 
-
-<nav class="navbar navbar-expand-md fixed-top">
+<nav class="navbar navbar-expand-md fixed-top header">
   <div class="container-fluid">
-    <a class="navbar-brand abs" href="#">Donald Barr</a>
+    <a class="navbar-brand abs header" href="#">Donald Barr</a>
     <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -65,11 +64,12 @@
 </nav>
 
 
+
 <body>
   <canvas id="canvas"></canvas>
   <div class="splash-wrapper">
     <div class="splash-content">
-      <img class="headshot faded" src="images\NYC-Pic.jpg" alt="" />
+      <img id="image" class="headshot faded" src="images\NYC-Pic.jpg" alt="" />
     </div>
     <div class="splash-text">
       <h1 class="faded">I'm Donald</h1>
@@ -80,21 +80,23 @@
 
     <div class="titles faded">
       <h2>About me</h2>
-      <p>I've been coding for around 5 months, completing the Udemy Complete 2021 Web Development Bootcamp in November. Also self teaching through all the many outlets on the wide web (there are a lot!). I live in West London but originally I'm from Edinburgh. Previously I worked as a bench joiner and cabinet maker - I guess I've always liked making things. Outside of work I'm a lifelong fan of videogames and all things tech, and I love to cook!
+      <p>I've been coding for around 5 months, completing the Udemy Complete 2021 Web Development Bootcamp in November. Also self teaching through all the many outlets on the wide web (there are a lot!). I live in West London but originally I'm from
+        Edinburgh. Previously I worked as a bench joiner and cabinet maker - I guess I've always liked making things. Outside of work I'm a lifelong fan of videogames and all things tech, and I love to cook!
       </p>
     </div>
 
     <div class="titles faded">
       <h2>My work</h2>
-      <p>My main piece of work so far has been <a href="http://www.johnhigginsresearch.com/"> a personal website for John Higgins.</a>  John is an author and speaker, and the website was designed to be a clean and simple focus point for his work. Written from scratch in Atom code editor in around
+      <p>My main piece of work so far has been <a href="http://www.johnhigginsresearch.com/"> a personal website for John Higgins.</a> John is an author and speaker, and the website was designed to be a clean and simple focus point for his work.
+        Written from scratch in Atom code editor in around
         two weeks, with Bootstrap elements. Since completing the course I made this website to build on my skills and eventually serve as a hub for future projects. Always learning as I go! </p>
     </div>
 
     <div class="titles faded">
       <h2>My skills</h2>
-      <p>My strongest points are HTML and CSS, followed by Javascript. I've also got experience making React apps, creating and maintaining SQL and MongoDB databases, using API's and more. My aim is to become a solid full stack developer, I find
+      <p class = "skills-text">My strongest points are HTML and CSS, followed by Javascript. I've also got experience making React apps, creating and maintaining SQL and MongoDB databases, using API's and more. My aim is to become a solid full stack developer, I find
         both front and back end to be equally challenging, interesting and satisfying to work with.
-      <p>
+      </p>
     </div>
 
     <div class="btn faded">
@@ -105,25 +107,20 @@
     </div>
   </div>
 
-
-  <footer>
-    <div>
-      <p class="footer-text">All content copyright Donald Barr 2021</p>
-    </div>
-  </footer>
+  <div class="footer">
+    <footer>
+      <p>All content copyright Donald Barr 2021</p>
+    </footer>
+  </div>
 
 
 
 
   <script src="button.js"></script>
-  <script src="canvas.js">
+  <script src="canvas.js"></script>
 
-  </script>
+
 
 </body>
-
-
-
-
 
 </html>

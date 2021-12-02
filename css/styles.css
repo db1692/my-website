@@ -5,23 +5,35 @@ body {
   height: 100%;
   background-color: #9bafd9;
   color: #1f2839;
-  font-family: 'Open Sans', sans-serif;
   width: 100%;
 }
 
 h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-weight: bold;
 }
 
 h2 {
-  margin-top: 8%;
+  margin: 8% 0% 3% 0%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
 }
 
+p {
+  font-family: 'Courier Prime', monospace;
+}
+
+canvas {
+  cursor: pointer;
+}
 
 .headshot {
   margin-top: 20%;
@@ -49,7 +61,7 @@ h2 {
   padding: 10px;
 }
 
-.splash-content, .splash-title, .splash-text, .links {
+.splash-content, .splash-text, .links {
   display: flex;
   justify-content: center;
   margin: auto;
@@ -57,17 +69,16 @@ h2 {
   padding: 10px;
 }
 
-footer {
-  text-align: center;
-  left: 0;
-  bottom: 0;
-  margin-top: 3%;
-  width: 100%;
-  height: 60px;
-  background: #background: rgba(0, 0, 0, 0.4);
-  ;
+.skills-text {
+  margin-bottom:10%;
 }
 
-.footer-text {
-  padding-top: 1%;
+.footer {
+  position: sticky;
+  margin: auto;
+  margin-top: 12%;
+  text-align: center;
+  width: 100%;
+  height: 20px;
+  background: rgba(0, 0, 0, 0);
 }

@@ -89,7 +89,7 @@ function animate() {
 }
 
 canvas.addEventListener('click', function() {
-  for (var i = 0; i < 30; i++) {
+  for (var i = 0; i < 80; i++) {
     var radius = (Math.random() * 2);
     var x = Math.random() * (innerWidth - radius * 2) + radius;
     var y = Math.random() * (innerHeight - radius * 2) + radius;
