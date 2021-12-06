@@ -14,23 +14,6 @@ function getRandomColor() {
   return color;
 }
 
-// for (var i = 0; i < 30; i++) {
-//
-//   var x = Math.random() * window.innerWidth;
-//   var y = Math.random() * window.innerHeight;
-//   c.beginPath();
-//   c.arc(x, y, 30, 0, Math.PI * 2, false);
-//   c.strokeStyle = getRandomColor();
-//   c.stroke();
-// }
-
-// var x = Math.random() * innerWidth;
-// var y = Math.random() * innerHeight;
-// var dx = (Math.random() - 0.5) * 6;
-// var dy = (Math.random() - 0.5 * 6);
-// var radius = 40;
-
-
 function Circle(x, y, dx, dy, radius) {
   this.x = x;
   this.y = y;
@@ -48,10 +31,6 @@ function Circle(x, y, dx, dy, radius) {
   }
 
   this.update = function() {
-    // if (this.y + this.radius > innerHeight ||
-    //   this.y - this.radius < 0) {
-    //   this.dy = -this.dy;
-    // }
 
     if (this.x + this.radius > innerWidth ||
       this.x - this.radius < 0) {

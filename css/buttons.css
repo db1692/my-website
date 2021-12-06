@@ -37,7 +37,7 @@
   position: absolute;
   border-radius: 7px;
   width: 100%;
-  height: 100%;
+  height: 110%;
   background-color: #8BA3D6;
   color: #1f2839;
   transform: translateZ(-2px) rotateX(180deg);
@@ -46,7 +46,7 @@
 }
 
 .btn-back p {
-  margin: 27px;
+  padding: 27px;
 }
 
 .btn[data-direction="left"] .btn-back,
@@ -56,7 +56,7 @@
 
 .btn.is-open {
   width: 400px;
-  height: 170px;
+  height: 190px;
 }
 
 .btn.is-open .btn-front {
@@ -82,4 +82,11 @@
 
 .btn[data-direction="left"].is-open {
   transform: rotateY(-180deg);
+}
+
+@media (min-width:2300px) {
+  .btn.is-open {
+    width: 500px;
+    height: 212px;
+  }
 }

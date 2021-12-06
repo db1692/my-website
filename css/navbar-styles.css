@@ -16,10 +16,8 @@
 }
 
 .navbar-brand:hover {
-  color:black;
+  color: black;
 }
-
-
 
 .navbar-brand.abs {
   position: absolute;
@@ -31,10 +29,11 @@
 }
 
 .stuck {
-  position:absolute;
-  top:850px;
+  position: absolute;
+  top: 400px;
 }
 
 .logos {
   max-width: 35px;
+  margin: 5px;
 }
