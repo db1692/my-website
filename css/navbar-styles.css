@@ -1,5 +1,5 @@
 .navbar {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.03);
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   top: 0;
@@ -16,7 +16,8 @@
 }
 
 .navbar-brand:hover {
-  color: black;
+  color: #C5DAFA;
+  cursor: default;
 }
 
 .navbar-brand.abs {
@@ -31,9 +32,4 @@
 .stuck {
   position: absolute;
   top: 400px;
-}
-
-.logos {
-  max-width: 35px;
-  margin: 5px;
 }

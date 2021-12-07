@@ -3,9 +3,9 @@
   position: absolute;
   width: 200px;
   height: 80px;
-  left:0;
-  right:0;
-  margin:auto;
+  left: 0;
+  right: 0;
+  margin: auto;
   transition: width 0.8s cubic-bezier(0.23, 1, 0.32, 1), height 0.8s cubic-bezier(0.23, 1, 0.32, 1), transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transform-style: preserve-3d;
   transform-origin: 50% 50%;
@@ -19,8 +19,7 @@
   width: 100%;
   height: 100%;
   line-height: 80px;
-  background-color: #1f2839;
-  color: #ACBCE8;
+  background-color: #C5DAFA;
   cursor: pointer;
   backface-visibility: hidden;
   font-family: 'Montserrat', sans-serif;
@@ -30,23 +29,40 @@
 }
 
 .btn-front:hover {
-  background-color: #8BA3D6;
+  background-color: #B4CFF8;
 }
 
 .btn-back {
   position: absolute;
   border-radius: 7px;
   width: 100%;
-  height: 110%;
-  background-color: #8BA3D6;
+  height: 100%;
+  background-color: #C5DAFA;
   color: #1f2839;
   transform: translateZ(-2px) rotateX(180deg);
   overflow: hidden;
   transition: box-shadow 0.8s ease;
+  cursor: default;
+}
+
+.go-back-image {
+  width: 17px;
+  height: 17px;
+  display: inline;
+  text-align: center;
+  margin:auto;
+}
+
+.btn-back button.yes {
+  background-color: rgba(0, 0, 0, 0);
+  width: 17px;
+  height: 17px;
+  border: none;
 }
 
 .btn-back p {
   padding: 27px;
+  margin-bottom: 0;
 }
 
 .btn[data-direction="left"] .btn-back,
@@ -55,17 +71,17 @@
 }
 
 .btn.is-open {
-  width: 400px;
-  height: 190px;
+  width: 500px;
+  height: 200px;
 }
 
 .btn.is-open .btn-front {
-  pointer-events: none;
+  /* pointer-events: none; */
   line-height: 160px;
 }
 
 .btn.is-open .btn-back {
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4)!important;
 }
 
 .btn[data-direction="top"].is-open {
@@ -82,11 +98,4 @@
 
 .btn[data-direction="left"].is-open {
   transform: rotateY(-180deg);
-}
-
-@media (min-width:2300px) {
-  .btn.is-open {
-    width: 500px;
-    height: 212px;
-  }
 }
