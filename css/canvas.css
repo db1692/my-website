@@ -1,9 +1,20 @@
-canvas {
+#topCanvas {
   background-color: #1D3557;
   background: hsla(221, 45%, 73%, 1);
   background: linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
   background: -moz-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
   background: -webkit-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#9BAFD9", endColorstr="#103783", GradientType=1);
-  width:100%;
+  width: 100%;
+}
+
+#backgroundEffect {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -9999;
+  background-color: hsla(221, 45%, 73%, 1);
 }

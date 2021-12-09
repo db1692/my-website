@@ -1,18 +1,10 @@
-var canvas = document.querySelector("canvas");
+const canvas = document.getElementById("topCanvas");
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-var c = canvas.getContext("2d");
+const c = canvas.getContext("2d");
 
-function getRandomColor() {
-  var letters = '0123456789ABCDEF';
-  var color = '#';
-  for (var i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
-}
 
 function Circle(x, y, dx, dy, radius) {
   this.x = x;
@@ -45,14 +37,14 @@ function Circle(x, y, dx, dy, radius) {
 }
 
 
-var circleArray = [];
+const circleArray = [];
 
-for (var i = 0; i < 10; i++) {
-  var radius = (Math.random() * 2);
-  var x = Math.random() * (innerWidth - radius * 2) + radius;
-  var y = Math.random() * (innerHeight - radius * 2) + radius;
-  var dx = (Math.random() - 0.2) * 0.1;
-  var dy = (Math.random() - 0.2) * 0.4;
+for (i = 0; i < 100; i++) {
+  radius = (Math.random() * 1);
+  x = Math.random() * (innerWidth - radius * 2) + radius;
+  y = Math.random() * (innerHeight - radius * 2) + radius;
+  dx = (Math.random() - 0.1) * 0.05;
+  dy = (Math.random() - 0.2) * 0.1;
   circleArray.push(new Circle(x, y, dx, dy, radius));
 }
 
@@ -62,18 +54,18 @@ function animate() {
   requestAnimationFrame(animate);
   c.clearRect(0, 0, innerWidth, innerHeight);
 
-  for (var i = 0; i < circleArray.length; i++) {
+  for (i = 0; i < circleArray.length; i++) {
     circleArray[i].update();
   }
 }
 
 canvas.addEventListener('click', function() {
-  for (var i = 0; i < 80; i++) {
-    var radius = (Math.random() * 2);
-    var x = Math.random() * (innerWidth - radius * 2) + radius;
-    var y = Math.random() * (innerHeight - radius * 2) + radius;
-    var dx = (Math.random() - 0.2) * 0.1;
-    var dy = (Math.random() - 0.2) * 0.4;
+  for (i = 0; i < 80; i++) {
+    radius = (Math.random() * 2);
+    x = Math.random() * (innerWidth - radius * 2) + radius;
+    y = Math.random() * (innerHeight - radius * 2) + radius;
+    dx = (Math.random() - 0.2) * 0.07;
+    dy = (Math.random() - 0.2) * 0.15;
     circleArray.push(new Circle(x, y, dx, dy, radius));
   }
 });

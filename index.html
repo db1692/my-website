@@ -19,6 +19,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Montserrat&display=swap" rel="stylesheet">
 
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
   <!-- Scripts -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -68,7 +76,9 @@
 <body>
 
   <!-- Canvas -->
-  <canvas id="canvas"></canvas>
+  <canvas id="topCanvas"></canvas>
+
+  <canvas id="backgroundEffect"></canvas>
 
   <!-- Main Section -->
 
@@ -79,34 +89,44 @@
     </div>
 
 
-      <h1 class="faded">I'm Donald</h1>
+
+    <div class="frosted faded">
+      <h1 class="faded headline">I'm Donald</h1>
       <p class="faded texts">A website designer and developer, always interested in fun and well designed things. Available for hire and for individual projects.</p>
-
-
-    <div class="titles faded">
-      <h2>About me</h2>
-      <p class="texts">I've been coding for around 5 months. I recently finished the Udemy Complete 2021 Web Development Bootcamp and I've done a lot of self teaching through all the many outlets on the wide web (there are a lot!).
-        I live in West London but originally I'm from Edinburgh. Previously I've worked as a bench joiner and cabinet maker - I guess I've always liked making things! Outside of work I'm a lifelong fan of videogames and all things tech, and I love to
-        cook food, eat food, talk about food...
-      </p>
     </div>
 
-    <div class="titles faded">
-      <h2>My work</h2>
-      <p class="texts">My main piece of work so far has been <a href="http://www.johnhigginsresearch.com/"> a personal website for John Higgins.</a> John is an author and speaker, and the website was designed to be a clean and simple focus point for
-        his work.
-        It was written from scratch in Atom code editor in around two weeks, with Bootstrap elements for the navbar and responsive sizing.
-        Since completing the course I made this website to build on my skills and eventually serve as a hub for future projects. Always learning as I go! </p>
+    <div class="frosted faded">
+      <div class="titles faded">
+        <h2>About me</h2>
+        <p class="texts">I've been coding for around 5 months. I recently finished the Udemy Complete 2021 Web Development Bootcamp and I've done a lot of self teaching through all the many outlets on the wide web (there are a lot!).
+          I live in West London but originally I'm from Edinburgh. Previously I've worked as a bench joiner and cabinet maker - I guess I've always liked making things! Outside of work I'm a lifelong fan of videogames and all things tech, and I love
+          to cook food, eat food, think about food...
+        </p>
+      </div>
     </div>
 
-    <div class="titles faded">
-      <h2>My skills</h2>
-      <p class="skills-text texts">
-        I have robust working knowledge of HTML and CSS - I love designing websites and the whole creative process and how they come together. I'm pretty good at the foundations of JavaScript and some of the associated frameworks such as JQuery,
-        React etc. They're definitely more complex and there's still a lot more there for me to learn. I've also got experience creating and maintaining SQL and MongoDB databases, using API's and more.
-        My aim is to become a solid full stack developer as I find both front and back end to be equally challenging, interesting and satisfying to work with.
-      </p>
+    <div class="frosted faded">
+      <div class="titles faded">
+        <h2>My work</h2>
+        <p class="texts">My main piece of work so far has been <a href="http://www.johnhigginsresearch.com/"> a personal website for John Higgins.</a> John is an author and speaker, and the website was designed to be a clean and simple focus point
+          for
+          his work.
+          It was written from scratch in Atom code editor in around two weeks, with Bootstrap elements for the navbar and responsive sizing.
+          Since completing the course I made this website to build on my skills and eventually serve as a hub for future projects. Always learning as I go! </p>
+      </div>
     </div>
+
+    <div class="frosted faded">
+      <div class="titles faded">
+        <h2>My skills</h2>
+        <p class="skills-text texts">
+          I have robust working knowledge of HTML and CSS - I love designing websites and the whole creative process and how they come together. I'm pretty good at the foundations of JavaScript and some of the associated frameworks such as JQuery,
+          React etc. They're definitely more complex and there's still a lot more there for me to learn. I've also got experience creating and maintaining SQL and MongoDB databases, using API's and more.
+          My aim is to become a solid full stack developer as I find both front and back end to be equally challenging, interesting and satisfying to work with.
+        </p>
+      </div>
+    </div>
+
 
     <!-- Button -->
 
@@ -119,10 +139,14 @@
     </div>
   </div>
 
+
+
+
+
   <!-- Footer -->
 
   <div class="footer">
-    <footer id= "footer">
+    <footer id="footer">
 
       <p class="footer-text"> <a class="button" href="#popup1">Credits</a> for this website. Check out <a href="https://github.com/db1692">my Github!</a> </p>
 
@@ -133,9 +157,9 @@
           <a class="close" href="#footer">&times;</a>
           <div class="content">
             <p>This website was made by me, with the help of some great resources and tutorials online.
-            Firstly thanks to <a href="https://www.youtube.com/channel/UC9Yp2yz6-pwhQuPlIDV_mjA"> Chris Courses</a> for the brilliant canvas tutorials.
-            The flip effect on the contact button was built from <a href="https://github.com/hakimel/css/tree/master/flipside"> Hakimakel</a>'s code,
-            and this popup from <a href="https://codepen.io/imprakash/pen/GgNMXO">this Codepen</a> by  <a href="https://codepen.io/imprakash">Prakash.</a></p>
+              Firstly thanks to <a href="https://www.youtube.com/channel/UC9Yp2yz6-pwhQuPlIDV_mjA"> Chris Courses</a> for the brilliant canvas tutorials.
+              The flip effect on the contact button was built from <a href="https://github.com/hakimel/css/tree/master/flipside"> Hakimakel</a>'s code,
+              and this popup from <a href="https://codepen.io/imprakash/pen/GgNMXO">this Codepen</a> by <a href="https://codepen.io/imprakash">Prakash.</a></p>
 
           </div>
         </div>
@@ -147,7 +171,7 @@
 
   <script src="button.js"></script>
   <script src="canvas.js"></script>
-
+  <script src="backgroundEffect.js"></script>
 
 </body>
 
