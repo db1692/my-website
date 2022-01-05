@@ -50,25 +50,28 @@
 .popup p {
   line-height: 1.75em;
 }
+
 .popup .close {
   position: absolute;
   top: 20px;
-  right: 30px;
+  right: 25px;
   transition: all 200ms;
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
   color: #0A3591;
 }
+
 .popup .close:hover {
   color: #B4CFF8;
 }
+
 .popup .content {
   max-height: 30%;
   overflow: auto;
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 1000px){
   .box{
     width: 70%;
   }
