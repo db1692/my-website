@@ -1,6 +1,7 @@
 window.onload = function() {
 
   var btn = document.querySelector('.btn');
+  var btnBack = document.querySelector('.btn-back')
 
   var btnFront = btn.querySelector('.btn-front'),
     btnYes = btn.querySelector('.btn-back .yes')
@@ -24,10 +25,12 @@ window.onload = function() {
 		} );
       btn.setAttribute('data-direction', directions.shift().id);
       btn.classList.add('is-open');
+      btnBack.classList.remove('closed');
     });
 
   btnYes.addEventListener('click', function(event) {
     btn.classList.remove('is-open');
+    btnBack.classList.add('closed');
   });
 
 
